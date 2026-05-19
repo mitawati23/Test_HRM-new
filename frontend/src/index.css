@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #a9847a;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-xl border border-slate-200/80 shadow-[0_8px_32px_rgba(15,23,42,0.08)];
+  }
+}
+
+/* Login — gradient animasi */
+@keyframes login-gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes login-orb-float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -40px) scale(1.08);
+  }
+  66% {
+    transform: translate(-25px, 25px) scale(0.95);
+  }
+}
+
+.login-animated-bg {
+  background: linear-gradient(
+    -45deg,
+    #0c6e1c,
+    #03a15d,
+    #c046e5,
+    #ed3aba,
+    #0898b2,
+    #7125eb
+  );
+  background-size: 400% 400%;
+  animation: login-gradient-flow 14s ease infinite;
+}
+
+.login-orb {
+  animation: login-orb-float 18s ease-in-out infinite;
+}
+
+.login-orb-delay {
+  animation-delay: -6s;
+}
+
+.login-orb-delay-2 {
+  animation-delay: -12s;
+}

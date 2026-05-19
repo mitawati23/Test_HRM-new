@@ -1,0 +1,20 @@
+{
+  "name": "hrm-wfh-system",
+  "version": "1.0.0",
+  "description": "Employee WFH Attendance & HR Management System",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev": "npm run dev --workspace=backend & npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=backend && npm run build --workspace=frontend",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "keywords": ["nestjs", "react", "attendance", "hrm"],
+  "author": "",
+  "license": "MIT"
+}
