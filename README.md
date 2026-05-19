@@ -63,8 +63,8 @@ hrm-wfh-system/
 ## Step 1 — Clone Repository
 
 ```bash
-git clone https://github.com/Carolinesnt/hrm-wfh-system.git
-cd hrm-wfh-system
+git clone https://github.com/mitawati23/Test_HRM-new.git
+cd Test_HRM-new
 ```
 
 Ganti `USERNAME` dan nama repo sesuai GitHub Anda.
